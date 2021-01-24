@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.gzeinnumer.libadapterkt.databinding.ActivityMainBinding
 import com.gzeinnumer.libadapterkt.databinding.ItemRvBinding
+import com.gzeinnumer.libadapterkt.lib.RVB
+import com.gzeinnumer.libadapterkt.test.AutomaticBindingInflater
 import com.gzeinnumer.libadapterkt.test.BindViewHolder
 import com.gzeinnumer.libadapterkt.test.RVBuilder
 
@@ -20,13 +22,15 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val b = AutomaticBindingInflater<ActivityMainBinding>()
+
 //        initView()
-        initView2()
+//        initView2()
 
     }
 
     private fun initView2() {
-
+        val rvB = RVB(AutomaticBindingInflater<ItemRvBinding>())
     }
 
     private fun initView() {

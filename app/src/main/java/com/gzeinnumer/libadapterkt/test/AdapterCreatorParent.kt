@@ -27,6 +27,7 @@ abstract class AdapterCreatorParent<VB : ViewBinding>(
             )
         } else {
             AdapterCreator.ViewHolderNotEmpty(bindingInflater.invoke(LayoutInflater.from(parent.context), parent, false))
+//            AdapterCreator.ViewHolderNotEmpty(bindingInflater.invoke(LayoutInflater.from(parent.context), parent, false))
         }
     }
 }

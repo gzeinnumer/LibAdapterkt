@@ -26,6 +26,6 @@ class AdapterCreator<VB : ViewBinding>(private val list: List<String>,
     }
     class ViewHolderEmpty(itemView: View) : RecyclerView.ViewHolder(itemView)
 
-    override val bindingInflater: (LayoutInflater, ViewGroup?, Boolean) -> VB
-        get() = TODO("Not yet implemented")
+//    override val bindingInflater: (LayoutInflater, ViewGroup?, Boolean) -> VB
+//        get() = TODO("Not yet implemented")
 }
